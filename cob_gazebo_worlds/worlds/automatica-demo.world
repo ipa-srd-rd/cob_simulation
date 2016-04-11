@@ -48,7 +48,7 @@
       </link>
     </model>
 
-<!-- Info/PCs -->
+<!-- Info/PCs
   <model name="info">
     <static>true</static>
     <link name="info">
@@ -71,23 +71,24 @@
       <gravity>1</gravity>
     </link>
   </model>
+-->
 
 <!-- Source -->
   <model name="source">
     <static>true</static>
     <link name="source">
-      <pose>-3.75 2.0 0.7  0 0 0</pose>
+      <pose>-3.5 2.5 0.7  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.5 2 1.4</size>
+            <size>1.0 1.0 1.4</size>
           </box>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.5 2 1.4</size>
+            <size>1.0 1.0 1.4</size>
           </box>
         </geometry>
         <material>Gazebo/Blue</material>
@@ -100,18 +101,18 @@
   <model name="drain">
     <static>true</static>
     <link name="drain">
-      <pose>3.75 -2.0 0.7  0 0 0</pose>
+      <pose>3.5 -2.5 0.7  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.5 2 1.4</size>
+           <size>1.0 1.0 1.4</size>
           </box>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.5 2 1.4</size>
+            <size>1.0 1.0 1.4</size>
           </box>
         </geometry>
         <material>Gazebo/Blue</material>
@@ -124,18 +125,18 @@
   <model name="wall1">
     <static>true</static>
     <link name="wall1">
-      <pose>-4.025 0 1.2  0 0 0</pose>
+      <pose>-4.025 0 0.2  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.05 6.1 2.4</size>
+            <size>0.05 6.1 0.4</size>
           </box>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.05 6.1 2.4</size>
+            <size>0.05 6.1 0.4</size>
           </box>
         </geometry>
         <material>Gazebo/Blue</material>
@@ -170,18 +171,18 @@
 <model name="wall3">
     <static>true</static>
     <link name="wall3">
-      <pose>0 -3.025 1.2  0 0 0</pose>
+      <pose>0 -3.025 0.2  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
-            <size>8.0 0.05 2.4</size>
+            <size>8.0 0.05 0.4</size>
           </box>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <box>
-            <size>8.0 0.05 2.4</size>
+            <size>8.0 0.05 0.4</size>
           </box>
         </geometry>
         <material>Gazebo/Blue</material>
@@ -219,7 +220,7 @@
 <model name="obstacle11">
     <static>true</static>
     <link name="obstacle11">
-      <pose>-0.5 1 0.3 0 0 0</pose>
+      <pose>-0.0 1.5 0.3 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
@@ -241,7 +242,7 @@
 <model name="obstacle12">
     <static>true</static>
     <link name="obstacle12">
-      <pose>1 0.275 0.3  0 0 0</pose>
+      <pose>1.5 0.775 0.3  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
@@ -266,7 +267,7 @@
 <model name="obstacle21">
     <static>true</static>
     <link name="obstacle21">
-      <pose>-0.5 0 0.3 0 0 0</pose>
+      <pose>-0.0 0.5 0.3 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
@@ -288,7 +289,7 @@
 <model name="obstacle22">
     <static>true</static>
     <link name="obstacle22">
-      <pose>0.025 -1.0 0.3  0 0 0</pose>
+      <pose>0.525 -0.5 0.3  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
@@ -311,7 +312,7 @@
 <model name="obstacle23">
     <static>true</static>
     <link name="obstacle23">
-      <pose>0.5 -2.025 0.3  0 0 0</pose>
+      <pose>1.0 -1.525 0.3  0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
