@@ -3,10 +3,10 @@
 ########################################################################################################################
 
 # The global frame of the costmap to operate in
-global_frame: map   # default: "/map" -> WARNING: Default value has a "/" in front of the frame-name
+global_frame: /map   # default: "/map" -> WARNING: Default value has a "/" in front of the frame-name
 
 # The name of the frame for the base link of the robot
-robot_base_frame: map    # default: "base_link"
+robot_base_frame: hokuyo_laser # default: "base_link"
 
 # The footprint of the robot -> WARNING: According to ducumentation this parameter should not be loaded from parameter
 # server but be subscribed to! However, it is required to run error - free
