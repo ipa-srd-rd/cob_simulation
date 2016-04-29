@@ -19,4 +19,7 @@
 		<arg name="gui" value="$(arg gui)" />
 		<!--arg name="throttled" value="$(arg throttled)" /-->
 	</include>
+
+	<include file="$(find cob_gazebo_objects)/launch/ipa_static_sensor_costmap.launch" />
+
 </launch>
