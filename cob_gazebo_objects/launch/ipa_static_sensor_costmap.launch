@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
+  <arg name="ipa_navigation_config_pkg" default="$(find ipa_navigation_config)"/>
+  <arg name="cob_gazebo_objects_pkg" default="$(find cob_gazebo_objects)"/>
+
+  <!-- spawn static sensor using sdf -->
+  <node name="spawn_static_sensor" pkg="gazebo_ros" type="spawn_model" args="-file $(arg cob_gazebo_objects_pkg)/Media/models/hokuyo/model-1_4.sdf -sdf -x 3 -y 2 -z 0.2 -Y -2.36 -model hokuyo" />
+
+  <!-- start tf broadcaster -->
+  <node pkg="tf" type="static_transform_publisher" name="static_sensor_broadcaster" args="3 2 0.2 -2.36 0 0 map hokuyo_laser 100" />
+
+  <!-- start hokuyo node -->
+  <node name="hokuyo_node" pkg="gazebo_plugins" type="hokuyo_node" output="screen" />
+
+  <!-- start local costmap -->
+  <node name="static_sensor_costmap_node" pkg="costmap_2d" type="costmap_2d_node" output="screen">
+    <rosparam file="$(arg ipa_navigation_config_pkg)/config/sensor_setups/static_sensor_costmap_params.yaml" command="load" ns="costmap" />
+  </node>
+
+</launch>
