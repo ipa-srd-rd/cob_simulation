@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <launch>
 
-  <arg name="robot" default="$(optenv ROBOT !!NO_ROBOT_SET!!)"/>
-  <arg name="ipa_navigation_config_pkg" default="$(find ipa_navigation_config)"/>
   <arg name="cob_gazebo_objects_pkg" default="$(find cob_gazebo_objects)"/>
 
   <!-- spawn static sensor using sdf -->
