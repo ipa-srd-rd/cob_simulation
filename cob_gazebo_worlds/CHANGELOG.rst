@@ -5,7 +5,6 @@ Changelog for package cob_gazebo_worlds
 0.6.5 (2016-04-01)
 ------------------
 * enable other gazebo worlds packages
-* remove robot_id
 * changed color of boxes on the belt to grey
 * nicer structure
 * changed name of the environment to automotive-assembly-line
@@ -33,6 +32,7 @@ Changelog for package cob_gazebo_worlds
 * fix ipa-apartment elevetor controllers
 * use controller_manager spawn
 * Contributors: ipa-fxm, ipa-nhg
+
 
 0.6.3 (2015-06-17)
 ------------------

@@ -4,7 +4,7 @@
   <arg name="cob_gazebo_objects_pkg" default="$(find cob_gazebo_objects)"/>
 
   <!-- spawn static sensor using sdf -->
-  <node name="spawn_static_sensor" pkg="gazebo_ros" type="spawn_model" args="-file $(arg cob_gazebo_objects_pkg)/Media/models/hokuyo/model-1_4.sdf -sdf -x 3 -y 2 -z 0.2 -Y -2.36 -model hokuyo" />
+  <node name="spawn_static_sensor" pkg="gazebo_ros" type="spawn_model" args="-file $(arg cob_gazebo_objects_pkg)/Media/models/hokuyo/model-1_4.sdf -sdf -x 3 -y 2 -z 0.25 -Y -2.36 -model hokuyo" />
 
   <!-- start tf broadcaster -->
   <node pkg="tf" type="static_transform_publisher" name="static_sensor_broadcaster" args="3 2 0.2 -2.36 0 0 map hokuyo_laser 100" />
